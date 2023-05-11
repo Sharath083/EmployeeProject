@@ -15,7 +15,7 @@ public class AllEmployeeDao {
 	
 //	private final String mysql = "jdbc:mysql://localhost:3306/employee";
 //	private final String name = "root";
-//	private final String pass = "root";
+///	private final String pass = "root";
 
 	
 	private final String insertQuery ="INSERT INTO new_table(employeeId, salary, employeeName,employeeType) VALUES (?, ?, ?,?)";
