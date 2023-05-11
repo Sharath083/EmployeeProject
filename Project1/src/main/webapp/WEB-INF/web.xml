@@ -1,0 +1,80 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+  <param-name>mysql</param-name>
+  <param-value>jdbc:mysql://localhost:3306/employee</param-value>
+  </context-param>
+  <context-param>
+  <param-name>name</param-name>
+  <param-value>root</param-value>
+  </context-param>
+  <context-param>
+  <param-name>pass</param-name>
+  <param-value>root</param-value>
+  </context-param>  
+  <servlet>
+  	<servlet-name>DisplayAll</servlet-name>
+  	<display-name>DisplayAll</display-name>
+  	<description></description>
+  	<servlet-class>controller.DisplayAll</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Insert</servlet-name>
+  	<display-name>Insert</display-name>
+  	<description></description>
+  	<servlet-class>controller.Insert</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Display</servlet-name>
+  	<display-name>Display</display-name>
+  	<description></description>
+  	<servlet-class>controller.Display</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Update</servlet-name>
+  	<display-name>Update</display-name>
+  	<description></description>
+  	<servlet-class>controller.Update</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Delete</servlet-name>
+  	<display-name>Delete</display-name>
+  	<description></description>
+  	<servlet-class>controller.Delete</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Filter</servlet-name>
+  	<display-name>Filter</display-name>
+  	<description></description>
+  	<servlet-class>controller.Filter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DisplayAll</servlet-name>
+  	<url-pattern>/DisplayAll</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Insert</servlet-name>
+  	<url-pattern>/Insert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Display</servlet-name>
+  	<url-pattern>/Display</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Update</servlet-name>
+  	<url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Delete</servlet-name>
+  	<url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Filter</servlet-name>
+  	<url-pattern>/Filter</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
